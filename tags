@@ -1,0 +1,150 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AI	ai.cpp	/^AI::AI(QgData sqg):qd(sqg)$/;"	f	class:AI	signature:(QgData sqg)
+AI	ai.h	/^		AI(QgData sqg);$/;"	p	class:AI	access:public	signature:(QgData sqg)
+AI	ai.h	/^class AI$/;"	c
+AI::AI	ai.cpp	/^AI::AI(QgData sqg):qd(sqg)$/;"	f	class:AI	signature:(QgData sqg)
+AI::AI	ai.h	/^		AI(QgData sqg);$/;"	p	class:AI	access:public	signature:(QgData sqg)
+AI::getfqzs	ai.h	/^		u_char getfqzs( QgData qd );$/;"	p	class:AI	access:public	signature:( QgData qd )
+AI::getqzs	ai.cpp	/^u_char AI::getqzs( QgData qd )$/;"	f	class:AI	signature:( QgData qd )
+AI::getqzs	ai.h	/^		u_char getqzs( QgData qd );$/;"	p	class:AI	access:public	signature:( QgData qd )
+AI::getzq	ai.cpp	/^u_char AI::getzq( u_int ot )$/;"	f	class:AI	signature:( u_int ot )
+AI::getzq	ai.h	/^		u_char getzq( u_int ot );$/;"	p	class:AI	access:public	signature:( u_int ot )
+AI::getzs	ai.h	/^		u_char getzs( QgData qd );$/;"	p	class:AI	access:public	signature:( QgData qd )
+AI::qd	ai.h	/^		QgData qd;	$/;"	m	class:AI	access:protected
+AI::ts	ai.h	/^		six ts;$/;"	m	class:AI	access:public
+AI::~AI	ai.cpp	/^AI::~AI()$/;"	f	class:AI	signature:()
+AI::~AI	ai.h	/^		~AI();$/;"	p	class:AI	access:public	signature:()
+BIN	Makefile	/^BIN      = six$/;"	m
+CPP	Makefile	/^CPP      = g++ $/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -g3 -std=c++11$/;"	m
+LINKOBJ	Makefile	/^LINKOBJ  = main.o six.o ai.o$/;"	m
+OBJ	Makefile	/^OBJ      = main.o six.o ai.o$/;"	m
+QgData	ai.h	/^struct QgData$/;"	s
+QgData::ot	ai.h	/^	u_int ot;	\/\/第12位执棋，345位1方棋子数，678位2方棋子数，9,10,11,12,13位执棋方着数，$/;"	m	struct:QgData	access:public
+QgData::qg	ai.h	/^	u_int qg;$/;"	m	struct:QgData	access:public
+d	six.h	/^	u_char d;$/;"	m	struct:zuosu	access:public
+dispqg	six.cpp	/^bool six::dispqg()$/;"	f	class:six	signature:()
+dispqg	six.h	/^		bool dispqg();$/;"	p	class:six	access:public	signature:()
+fxb	six.h	/^		const u_int fxb[16];	\/\/方向表.通过查表法取得某个位置的棋子可以行进的方向.比如:fxb[5]=0b1111,表示该位置的棋子上下左右都可以;fxb[0]=0b1010,可以上和左. $/;"	m	class:six	access:protected
+fxs	six.h	/^		const u_int fxs = 0x8;	\/\/方向上 $/;"	m	class:six	access:protected
+fxwzb	six.h	/^		const int fxwzb[9];	\/\/通过此方向位置表,取得某个位置棋子的上下左右的位置.比如8是向上,fxwzb[8]里的值就是-4,用当前棋子位置与-4相加及得左方向位置.fxwzb[4]里是+4.因为最大值是8,所以这个数组共有9个元素 $/;"	m	class:six	access:protected
+fxx	six.h	/^		const u_int fxx = 0x4;	\/\/方向下 $/;"	m	class:six	access:protected
+fxy	six.h	/^		const u_int fxy = 0x1;	\/\/方向右 $/;"	m	class:six	access:protected
+fxz	six.h	/^		const u_int fxz = 0x2;	\/\/方向左 $/;"	m	class:six	access:protected
+getfqzs	ai.h	/^		u_char getfqzs( QgData qd );$/;"	p	class:AI	access:public	signature:( QgData qd )
+getfzq	six.cpp	/^u_char six::getfzq()$/;"	f	class:six	signature:()
+getfzq	six.h	/^		u_char getfzq();			\/\/取执棋方的反方$/;"	p	class:six	access:public	signature:()
+getqg	six.cpp	/^u_int six::getqg()$/;"	f	class:six	signature:()
+getqg	six.h	/^		u_int getqg();$/;"	p	class:six	access:public	signature:()
+getqzs	ai.cpp	/^u_char AI::getqzs( QgData qd )$/;"	f	class:AI	signature:( QgData qd )
+getqzs	ai.h	/^		u_char getqzs( QgData qd );$/;"	p	class:AI	access:public	signature:( QgData qd )
+getqzsu	six.cpp	/^int six::getqzsu(u_int qg,u_char zq)$/;"	f	class:six	signature:(u_int qg,u_char zq)
+getqzsu	six.h	/^		int getqzsu(u_int qg,u_char zq);	\/\/取得zq方的棋子数目 $/;"	p	class:six	access:public	signature:(u_int qg,u_char zq)
+getqzz	six.cpp	/^u_char six::getqzz(u_int qg,u_char wz)$/;"	f	class:six	signature:(u_int qg,u_char wz)
+getqzz	six.h	/^		u_char getqzz(u_int qg,u_char wz);	\/\/取得在qg上位置wz的棋子值 $/;"	p	class:six	access:public	signature:(u_int qg,u_char wz)
+getwzfx	six.cpp	/^u_int six::getwzfx(int wz)$/;"	f	class:six	signature:(int wz)
+getwzfx	six.h	/^		u_int getwzfx(int wz);	\/\/取得某个位置可以行进的方向 ,返回值为4位二进制,从高位起依次为:上下左右,该位为1可以 $/;"	p	class:six	access:public	signature:(int wz)
+getzq	ai.cpp	/^u_char AI::getzq( u_int ot )$/;"	f	class:AI	signature:( u_int ot )
+getzq	ai.h	/^		u_char getzq( u_int ot );$/;"	p	class:AI	access:public	signature:( u_int ot )
+getzq	six.cpp	/^u_char six::getzq()$/;"	f	class:six	signature:()
+getzq	six.h	/^		u_char getzq();				\/\/取执棋方$/;"	p	class:six	access:public	signature:()
+getzs	ai.h	/^		u_char getzs( QgData qd );$/;"	p	class:AI	access:public	signature:( QgData qd )
+hxqzb	six.h	/^		const u_int hxqzb[4];	\/\/供函数testhxqzs使用,整个棋盘共有4行,为了测试某行的棋子数,将别的行清零,再数整个qg里1的个数即可.此数组即为屏蔽数.$/;"	m	class:six	access:protected
+lxqzb	six.h	/^		const u_int lxqzb[4];	\/\/列线棋子表 $/;"	m	class:six	access:protected
+main	main.cpp	/^int main(int argc, char** argv) $/;"	f	signature:(int argc, char** argv)
+movqz	six.cpp	/^bool six::movqz(u_int tqg,u_char sqz,u_char fx)$/;"	f	class:six	signature:(u_int tqg,u_char sqz,u_char fx)
+movqz	six.h	/^		bool movqz(u_int tqg,u_char sqz,u_char fx) ;	\/\/在棋格qg上将sqz位置的执棋方棋子移动到fx位置. fx按0b1111,最高位表示上,$/;"	p	class:six	access:public	signature:(u_int tqg,u_char sqz,u_char fx)
+ot	ai.h	/^	u_int ot;	\/\/第12位执棋，345位1方棋子数，678位2方棋子数，9,10,11,12,13位执棋方着数，$/;"	m	struct:QgData	access:public
+qd	ai.h	/^		QgData qd;	$/;"	m	class:AI	access:protected
+qg	ai.h	/^	u_int qg;$/;"	m	struct:QgData	access:public
+qg	six.h	/^		u_int qg; $/;"	m	class:six	access:protected
+s	six.h	/^	u_char s;$/;"	m	struct:zuosu	access:public
+setqg	six.cpp	/^void six::setqg(u_int sqg)$/;"	f	class:six	signature:(u_int sqg)
+setqg	six.h	/^		void setqg(u_int sqg);		\/\/设置棋格数据$/;"	p	class:six	access:public	signature:(u_int sqg)
+setqgot	ai.cpp	/^u_int setqgot(u_char zq,u_char qzs,u_char fqzs,u_char zs)$/;"	f	signature:(u_char zq,u_char qzs,u_char fqzs,u_char zs)
+setqgot	ai.h	/^u_int setqgot(u_char zq,u_char qzs,u_char fqzs,u_char zs);$/;"	p	signature:(u_char zq,u_char qzs,u_char fqzs,u_char zs)
+setzq	six.cpp	/^void six::setzq(u_char szq)$/;"	f	class:six	signature:(u_char szq)
+setzq	six.h	/^		void setzq(u_char);			\/\/设置执棋$/;"	p	class:six	access:public	signature:(u_char)
+six	six.cpp	/^six::six()$/;"	f	class:six	signature:()
+six	six.h	/^		six();$/;"	p	class:six	access:public	signature:()
+six	six.h	/^class six$/;"	c
+six::dispqg	six.cpp	/^bool six::dispqg()$/;"	f	class:six	signature:()
+six::dispqg	six.h	/^		bool dispqg();$/;"	p	class:six	access:public	signature:()
+six::fxb	six.h	/^		const u_int fxb[16];	\/\/方向表.通过查表法取得某个位置的棋子可以行进的方向.比如:fxb[5]=0b1111,表示该位置的棋子上下左右都可以;fxb[0]=0b1010,可以上和左. $/;"	m	class:six	access:protected
+six::fxs	six.h	/^		const u_int fxs = 0x8;	\/\/方向上 $/;"	m	class:six	access:protected
+six::fxwzb	six.h	/^		const int fxwzb[9];	\/\/通过此方向位置表,取得某个位置棋子的上下左右的位置.比如8是向上,fxwzb[8]里的值就是-4,用当前棋子位置与-4相加及得左方向位置.fxwzb[4]里是+4.因为最大值是8,所以这个数组共有9个元素 $/;"	m	class:six	access:protected
+six::fxx	six.h	/^		const u_int fxx = 0x4;	\/\/方向下 $/;"	m	class:six	access:protected
+six::fxy	six.h	/^		const u_int fxy = 0x1;	\/\/方向右 $/;"	m	class:six	access:protected
+six::fxz	six.h	/^		const u_int fxz = 0x2;	\/\/方向左 $/;"	m	class:six	access:protected
+six::getfzq	six.cpp	/^u_char six::getfzq()$/;"	f	class:six	signature:()
+six::getfzq	six.h	/^		u_char getfzq();			\/\/取执棋方的反方$/;"	p	class:six	access:public	signature:()
+six::getqg	six.cpp	/^u_int six::getqg()$/;"	f	class:six	signature:()
+six::getqg	six.h	/^		u_int getqg();$/;"	p	class:six	access:public	signature:()
+six::getqzsu	six.cpp	/^int six::getqzsu(u_int qg,u_char zq)$/;"	f	class:six	signature:(u_int qg,u_char zq)
+six::getqzsu	six.h	/^		int getqzsu(u_int qg,u_char zq);	\/\/取得zq方的棋子数目 $/;"	p	class:six	access:public	signature:(u_int qg,u_char zq)
+six::getqzz	six.cpp	/^u_char six::getqzz(u_int qg,u_char wz)$/;"	f	class:six	signature:(u_int qg,u_char wz)
+six::getqzz	six.h	/^		u_char getqzz(u_int qg,u_char wz);	\/\/取得在qg上位置wz的棋子值 $/;"	p	class:six	access:public	signature:(u_int qg,u_char wz)
+six::getwzfx	six.cpp	/^u_int six::getwzfx(int wz)$/;"	f	class:six	signature:(int wz)
+six::getwzfx	six.h	/^		u_int getwzfx(int wz);	\/\/取得某个位置可以行进的方向 ,返回值为4位二进制,从高位起依次为:上下左右,该位为1可以 $/;"	p	class:six	access:public	signature:(int wz)
+six::getzq	six.cpp	/^u_char six::getzq()$/;"	f	class:six	signature:()
+six::getzq	six.h	/^		u_char getzq();				\/\/取执棋方$/;"	p	class:six	access:public	signature:()
+six::hxqzb	six.h	/^		const u_int hxqzb[4];	\/\/供函数testhxqzs使用,整个棋盘共有4行,为了测试某行的棋子数,将别的行清零,再数整个qg里1的个数即可.此数组即为屏蔽数.$/;"	m	class:six	access:protected
+six::lxqzb	six.h	/^		const u_int lxqzb[4];	\/\/列线棋子表 $/;"	m	class:six	access:protected
+six::movqz	six.cpp	/^bool six::movqz(u_int tqg,u_char sqz,u_char fx)$/;"	f	class:six	signature:(u_int tqg,u_char sqz,u_char fx)
+six::movqz	six.h	/^		bool movqz(u_int tqg,u_char sqz,u_char fx) ;	\/\/在棋格qg上将sqz位置的执棋方棋子移动到fx位置. fx按0b1111,最高位表示上,$/;"	p	class:six	access:public	signature:(u_int tqg,u_char sqz,u_char fx)
+six::qg	six.h	/^		u_int qg; $/;"	m	class:six	access:protected
+six::setqg	six.cpp	/^void six::setqg(u_int sqg)$/;"	f	class:six	signature:(u_int sqg)
+six::setqg	six.h	/^		void setqg(u_int sqg);		\/\/设置棋格数据$/;"	p	class:six	access:public	signature:(u_int sqg)
+six::setzq	six.cpp	/^void six::setzq(u_char szq)$/;"	f	class:six	signature:(u_char szq)
+six::setzq	six.h	/^		void setzq(u_char);			\/\/设置执棋$/;"	p	class:six	access:public	signature:(u_char)
+six::six	six.cpp	/^six::six()$/;"	f	class:six	signature:()
+six::six	six.h	/^		six();$/;"	p	class:six	access:public	signature:()
+six::t1	six.h	/^		const u_int t1 ;	\/\/将此数与qg相与后,得到数的高位则是1方棋子. $/;"	m	class:six	access:protected
+six::t2	six.h	/^		const u_int t2 ;	\/\/将此数与qg相与后,得到数的高位则是2方棋子. $/;"	m	class:six	access:protected
+six::testcz	six.cpp	/^std::vector<u_char> six::testcz(u_int tqg, u_int wz)$/;"	f	class:six	signature:(u_int tqg, u_int wz)
+six::testcz	six.h	/^		std::vector<u_char> testcz(u_int tqg,u_int wz) ;	\/\/测试目的位置wz 上的棋子能吃掉对方棋子吗,如果可以则将被吃掉棋子的位置放入vector $/;"	p	class:six	access:public	signature:(u_int tqg,u_int wz)
+six::testhxqzs	six.cpp	/^int six::testhxqzs(u_int tqg,u_int wz) $/;"	f	class:six	signature:(u_int tqg,u_int wz)
+six::testhxqzs	six.h	/^		int testhxqzs(u_int tqg,u_int wz) ;	\/\/测试位置wz棋子所在行线的所有棋子总数. $/;"	p	class:six	access:public	signature:(u_int tqg,u_int wz)
+six::testlxqzs	six.cpp	/^int six::testlxqzs(u_int tqg,u_int wz) $/;"	f	class:six	signature:(u_int tqg,u_int wz)
+six::testlxqzs	six.h	/^		int testlxqzs(u_int tqg,u_int wz) ;	\/\/                  列 $/;"	p	class:six	access:public	signature:(u_int tqg,u_int wz)
+six::testwin	six.cpp	/^bool six::testwin(u_int tqg,u_char zq)$/;"	f	class:six	signature:(u_int tqg,u_char zq)
+six::testwin	six.h	/^		bool testwin(u_int tqg,u_char zq);	\/\/测试执棋方此时是否已经胜利 $/;"	p	class:six	access:public	signature:(u_int tqg,u_char zq)
+six::testzs	six.cpp	/^u_char six::testzs(u_int tqg,u_char zq,std::vector<zuosu>& zs)$/;"	f	class:six	signature:(u_int tqg,u_char zq,std::vector<zuosu>& zs)
+six::testzs	six.h	/^		u_char testzs(u_int tqg,u_char zq,std::vector<zuosu>& zs);	\/\/计算执棋方共有多少着数 ,将所有着数放入容器 $/;"	p	class:six	access:public	signature:(u_int tqg,u_char zq,std::vector<zuosu>& zs)
+six::wzb	six.h	/^		const u_int wzb[16];	\/\/位置表.通过查表法取得某个位置的棋子在qg的哪个二进制位. 比如:wzb[3]=0xc0,表示位置3的位在qg的0b000000000000000000000000XX000000 $/;"	m	class:six	access:protected
+six::wzb1	six.h	/^		const u_int wzb1[16];	\/\/1方棋子置位表.当需要将某位置的空位置为1方棋子时,用1wzb[x]里的值与棋格相或则成.$/;"	m	class:six	access:protected
+six::wzb2	six.h	/^		const u_int wzb2[16];	\/\/2方棋子置位表.当需要将某位置的空位置为2方棋子时,用1wzb[x]里的值与棋格相或则成.$/;"	m	class:six	access:protected
+six::zq	six.h	/^		u_char zq;		\/\/执棋方,只有1和2.为1表示此时该1方下棋. $/;"	m	class:six	access:protected
+six::~six	six.cpp	/^six::~six()$/;"	f	class:six	signature:()
+six::~six	six.h	/^		~six();$/;"	p	class:six	access:public	signature:()
+t1	six.h	/^		const u_int t1 ;	\/\/将此数与qg相与后,得到数的高位则是1方棋子. $/;"	m	class:six	access:protected
+t2	six.h	/^		const u_int t2 ;	\/\/将此数与qg相与后,得到数的高位则是2方棋子. $/;"	m	class:six	access:protected
+testcz	six.cpp	/^std::vector<u_char> six::testcz(u_int tqg, u_int wz)$/;"	f	class:six	signature:(u_int tqg, u_int wz)
+testcz	six.h	/^		std::vector<u_char> testcz(u_int tqg,u_int wz) ;	\/\/测试目的位置wz 上的棋子能吃掉对方棋子吗,如果可以则将被吃掉棋子的位置放入vector $/;"	p	class:six	access:public	signature:(u_int tqg,u_int wz)
+testhxqzs	six.cpp	/^int six::testhxqzs(u_int tqg,u_int wz) $/;"	f	class:six	signature:(u_int tqg,u_int wz)
+testhxqzs	six.h	/^		int testhxqzs(u_int tqg,u_int wz) ;	\/\/测试位置wz棋子所在行线的所有棋子总数. $/;"	p	class:six	access:public	signature:(u_int tqg,u_int wz)
+testlxqzs	six.cpp	/^int six::testlxqzs(u_int tqg,u_int wz) $/;"	f	class:six	signature:(u_int tqg,u_int wz)
+testlxqzs	six.h	/^		int testlxqzs(u_int tqg,u_int wz) ;	\/\/                  列 $/;"	p	class:six	access:public	signature:(u_int tqg,u_int wz)
+testwin	six.cpp	/^bool six::testwin(u_int tqg,u_char zq)$/;"	f	class:six	signature:(u_int tqg,u_char zq)
+testwin	six.h	/^		bool testwin(u_int tqg,u_char zq);	\/\/测试执棋方此时是否已经胜利 $/;"	p	class:six	access:public	signature:(u_int tqg,u_char zq)
+testzs	six.cpp	/^u_char six::testzs(u_int tqg,u_char zq,std::vector<zuosu>& zs)$/;"	f	class:six	signature:(u_int tqg,u_char zq,std::vector<zuosu>& zs)
+testzs	six.h	/^		u_char testzs(u_int tqg,u_char zq,std::vector<zuosu>& zs);	\/\/计算执棋方共有多少着数 ,将所有着数放入容器 $/;"	p	class:six	access:public	signature:(u_int tqg,u_char zq,std::vector<zuosu>& zs)
+ts	ai.h	/^		six ts;$/;"	m	class:AI	access:public
+u_char	six.h	/^typedef unsigned char u_char;$/;"	t
+u_int	six.h	/^typedef unsigned int u_int;$/;"	t
+wzb	six.h	/^		const u_int wzb[16];	\/\/位置表.通过查表法取得某个位置的棋子在qg的哪个二进制位. 比如:wzb[3]=0xc0,表示位置3的位在qg的0b000000000000000000000000XX000000 $/;"	m	class:six	access:protected
+wzb1	six.h	/^		const u_int wzb1[16];	\/\/1方棋子置位表.当需要将某位置的空位置为1方棋子时,用1wzb[x]里的值与棋格相或则成.$/;"	m	class:six	access:protected
+wzb2	six.h	/^		const u_int wzb2[16];	\/\/2方棋子置位表.当需要将某位置的空位置为2方棋子时,用1wzb[x]里的值与棋格相或则成.$/;"	m	class:six	access:protected
+zq	six.h	/^		u_char zq;		\/\/执棋方,只有1和2.为1表示此时该1方下棋. $/;"	m	class:six	access:protected
+zuosu	six.h	/^struct zuosu$/;"	s
+zuosu::d	six.h	/^	u_char d;$/;"	m	struct:zuosu	access:public
+zuosu::s	six.h	/^	u_char s;$/;"	m	struct:zuosu	access:public
+~AI	ai.cpp	/^AI::~AI()$/;"	f	class:AI	signature:()
+~AI	ai.h	/^		~AI();$/;"	p	class:AI	access:public	signature:()
+~six	six.cpp	/^six::~six()$/;"	f	class:six	signature:()
+~six	six.h	/^		~six();$/;"	p	class:six	access:public	signature:()
