@@ -2,7 +2,7 @@ CPP      = g++
 OBJ      = main.o six.o ai.o
 LINKOBJ  = main.o six.o ai.o
 BIN      = six
-CXXFLAGS -std=c++11
+CXXFLAGS = -std=c++11
 
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o $(BIN)
